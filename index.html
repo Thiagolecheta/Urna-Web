@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Urna Eletrônica</title>
+</head>
+<body>
+    <div class="urna">
+        <div class="tela">
+            <div class="d-1">
+                <div class="d1-left">
+                    <div class="d1-voto">
+                        <span>Seu voto para</span>
+                    </div>
+                    <div class="d1-cargo">
+                        <span>Vereador</span>
+                    </div>
+                    <div class="d1-digitacao">
+                        <div class="numero pisca"></div>
+                        <div class="numero"></div>
+                    </div>
+                    <div class="d1-nome-descricao">
+                        Nome:Thiago Lecheta<br>
+                        Partido:Teste<br>
+                        Vice-Prefeito:Thiago Lecheta
+                        
+                    </div>
+                </div>
+                <div class="d1-rigth">
+                    <div class="d1-rigth-image">
+                        <img src="imagens/84.jpg" alt="Prefeito">
+                        Prefeito
+                    </div>
+                    <div class="d1-rigth-image small">
+                        <img src="imagens/84_2.jpg" alt="Prefeito">
+                        Vice-Prefeito
+                    </div>
+                </div>
+            </div>
+            <div class="d-2">
+                Aperte a tela:<br>
+                <strong>Confirma</strong> para confirmar seu voto <br>
+                <strong>Corrige</strong> para reiniciar seu voto <br>
+            </div>
+        </div>
+        <div class="teclado">
+            <class class="teclado--linha ">
+                <div class="linha-btn urna--eleitoral">
+                    <img class="imagem" src="Brasao.png" alt="Logo Justiçã eleitoral">
+                    Urna eleitoral 
+                </div>
+            </class>
+            <class class="teclado--linha">
+                <div class="linha-btn" onclick="clicou('1')">1</div>
+                <div class="linha-btn" onclick="clicou('2')">2</div>
+                <div class="linha-btn" onclick="clicou('3')">3</div>
+            </class>
+            <class class="teclado--linha">
+                <div class="linha-btn" onclick="clicou('4')">4</div>
+                <div class="linha-btn" onclick="clicou('5')">5</div>
+                <div class="linha-btn" onclick="clicou('6')">6</div>
+            </class>
+            <class class="teclado--linha">
+                <div class="linha-btn" onclick="clicou('7')">7</div>
+                <div class="linha-btn" onclick="clicou('8')">8</div>
+                <div class="linha-btn" onclick="clicou('9')">9</div>
+            </class>
+            <class class="teclado--linha">
+                <div class="linha-btn" onclick="clicou('0')">0</div>
+            </class>
+            <class class="teclado--linha">
+                <div class="linha-btn btn--branco" onclick="branco()">Branco</div>
+                <div class="linha-btn btn--corrige" onclick="corrige()">Corrige</div>
+                <div class="linha-btn btn--confirma" onclick="confirma()">Confirma</div>
+            </class>
+            
+        </div>
+    </div>
+
+
+
+
+    <script src="etapas.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
